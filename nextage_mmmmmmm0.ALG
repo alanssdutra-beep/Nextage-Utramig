@@ -120,7 +120,7 @@ inicio
       outrocaso
          escreval("? Opção inválida. Tente novamente.")
       fimescolha
-
+//cade a explicação?
       se opcao <> 3 entao
          escreva("Deseja voltar ao menu? ( S / N ): ")
          leia(continuar)
@@ -131,4 +131,5 @@ inicio
    fimenquanto
 
 fimalgoritmo
+
 
