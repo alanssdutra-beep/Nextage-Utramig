@@ -11,39 +11,39 @@ var
 procedimento mostrarMenu()
 inicio
    escreval("+----------------------------------+")
-   escreval("¦             Nextage              ¦")
-   escreval("¦----------------------------------¦")
-   escreval("¦ 1 - Jogar                        ¦")
-   escreval("¦ 2 - Ver Pontuação                ¦")
-   escreval("¦ 3 - Sair                         ¦")
+   escreval("Â¦             Nextage              Â¦")
+   escreval("Â¦----------------------------------Â¦")
+   escreval("Â¦ 1 - Jogar                        Â¦")
+   escreval("Â¦ 2 - Ver PontuaÃ§Ã£o                Â¦")
+   escreval("Â¦ 3 - Sair                         Â¦")
    escreval("+----------------------------------+")
-   escreva("Escolha uma opção: ")
+   escreva("Escolha uma opÃ§Ã£o: ")
    leia(opcao)
 fimprocedimento
 
-// Procedimento para mostrar a pontuação
+// Procedimento para mostrar a pontuaÃ§Ã£o
 procedimento mostrarPontuacao(pontos: inteiro)
 inicio
    escreval +------------------------+
-            ¦    PLACAR ATUAL        ¦
-            ¦------------------------¦
-            ¦                        ¦
-            ¦      12 ponto(s)       ¦
-            ¦                        ¦
+            Â¦    PLACAR ATUAL        Â¦
+            Â¦------------------------Â¦
+            Â¦                        Â¦
+            Â¦      12 ponto(s)       Â¦
+            Â¦                        Â¦
             +------------------------+
 fimprocedimento
 
 // Procedimento do jogo
 procedimento jogar()
 inicio
-   escreval("Escolha o nível de dificuldade:")
-   escreval("1 - Fácil (números de 1 a 10)")
-   escreval("2 - Médio (números de 10 a 50)")
-   escreval("3 - Difícil (números de 50 a 100)")
-   escreva("Nível: ")
+   escreval("Escolha o nÃ­vel de dificuldade:")
+   escreval("1 - FÃ¡cil (nÃºmeros de 1 a 10)")
+   escreval("2 - MÃ©dio (nÃºmeros de 10 a 50)")
+   escreval("3 - DifÃ­cil (nÃºmeros de 50 a 100)")
+   escreva("NÃ­vel: ")
    leia(nivel)
 
-   // Gerar números aleatórios conforme o nível
+   // Gerar nÃºmeros aleatÃ³rios conforme o nÃ­vel
    escolha nivel
    caso 1
       numum <- randi(10) + 1
@@ -55,11 +55,11 @@ inicio
       numum <- randi(51) + 50
       numdois <- randi(51) + 50
    outrocaso
-      escreval("Nível inválido. Voltando ao menu.")
+      escreval("NÃ­vel invÃ¡lido. Voltando ao menu.")
       retorne
    fimescolha
 
-   // Sorteia a operação
+   // Sorteia a operaÃ§Ã£o
    escolha randi(4)
    caso 0
       operador <- "+"
@@ -75,7 +75,7 @@ inicio
          numdois <- randi(10) + 1
       fimenquanto
       operador <- "/"
-      resultado <- numum div numdois  // divisão inteira
+      resultado <- numum div numdois  // divisÃ£o inteira
    fimescolha
 
    escreval("Resolva: ", numum, " ", operador, " ", numdois, " = ?")
@@ -94,9 +94,10 @@ inicio
       escreval("******************************")
       escreval("*                            *")
       escreval("*          ERRADO!           *")
+      escreval("*     pontos resetados       *")
       escreval("*                            *")
       escreval("******************************")
-
+//minha mutanÃ§a a cima
       escreval("A resposta correta era ", resultado)
    fimse
 fimprocedimento
@@ -115,18 +116,19 @@ inicio
       caso 2
          mostrarPontuacao(pontos)
       caso 3
-         escreval("?? Obrigado por jogar! Até logo.")
+         escreval("?? Obrigado por jogar! AtÃ© logo.")
       outrocaso
-         escreval("? Opção inválida. Tente novamente.")
+         escreval("? OpÃ§Ã£o invÃ¡lida. Tente novamente.")
       fimescolha
 
       se opcao <> 3 entao
          escreva("Deseja voltar ao menu? ( S / N ): ")
          leia(continuar)
       senao
-         continuar <- "N" // força a saída do laço
+         continuar <- "N" // forÃ§a a saÃ­da do laÃ§o
       fimse
 
    fimenquanto
 
 fimalgoritmo
+
