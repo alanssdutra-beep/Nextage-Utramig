@@ -1,5 +1,5 @@
 algoritmo "QuizMatematicoAvancado"
-// Dono do jogo > Elessandro da silv
+// Dono do jogo > Elessandro da silva
 var
    opcao, nivel, pontos, resposta: inteiro
    operador : caractere
@@ -131,5 +131,6 @@ inicio
    fimenquanto
 
 fimalgoritmo
+
 
 
