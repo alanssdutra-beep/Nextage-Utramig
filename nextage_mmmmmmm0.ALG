@@ -6,7 +6,7 @@ var
    continuar : caractere
    resultado, numum, numdois : inteiro
    valor: real
-
+//ALEXANDRE IS SUKS
    // Procedimento para mostrar o menu
 procedimento mostrarMenu()
 inicio
@@ -131,6 +131,7 @@ inicio
    fimenquanto
 
 fimalgoritmo
+
 
 
 
