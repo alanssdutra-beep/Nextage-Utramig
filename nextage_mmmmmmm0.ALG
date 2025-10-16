@@ -11,7 +11,7 @@ var
 procedimento mostrarMenu()
 inicio
    escreval("+----------------------------------+")
-   escreval("¦             Nextage              ¦")
+   escreval("¦             Nextage alan          ¦")
    escreval("¦----------------------------------¦")
    escreval("¦ 1 - Jogar                        ¦")
    escreval("¦ 2 - Ver Pontuação                ¦")
@@ -131,6 +131,7 @@ inicio
    fimenquanto
 
 fimalgoritmo
+
 
 
 
