@@ -1,5 +1,5 @@
 algoritmo "QuizMatematicoAvancado"
-// Dono do jogo > Elessandro
+// Dono do jogo > Elessandro1
 var
    opcao, nivel, pontos, resposta: inteiro
    operador : caractere
@@ -131,6 +131,7 @@ inicio
    fimenquanto
 
 fimalgoritmo
+
 
 
 
